@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QRCode</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="input-group">
+                <label> Ooloque aqui o texto URL</label>
+                <input type="text" name="qr" id="qr-text" placeholder="Texto URL" required>
+            </div>
+            
+            <div class="qr-img">
+                <img src="https://chart.googleapis.com/chart?cht=qr&chl=test&chs=160x160&chld=L|0" alt="QR Code">
+            </div>
+
+            <div class="input-group">
+                <input type="submit" value="Gerar QR Code" id="submitBtn">
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
